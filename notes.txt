@@ -3,3 +3,10 @@ Prisma provides the database layer which offers CRUD operations. The second laye
 
 * What's the declarative way for loading data with React & Apollo?
 Using the 'useQuery' hook and passing the GraphQL query document as an argument
+
+** There are two top-level operation types in GraphQL: queries and mutations.
+Queries are used when we want to read data.
+
+Mutations are used when we want to change data. We use mutations when we want to create, update, or delete records.
+
+* 'useMutation' hook provided by Apollo Client is used to send mutations to the GraphQL server

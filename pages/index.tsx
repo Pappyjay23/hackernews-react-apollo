@@ -7,6 +7,7 @@ import {
 	createHttpLink,
 	InMemoryCache,
 } from "@apollo/client";
+import CreateLink from "../components/CreateLink";
 
 const Home: NextPage = () => {
 	// Apollo imports
@@ -29,7 +30,7 @@ const Home: NextPage = () => {
 
 			<ApolloProvider client={client}>
 				<main className='body'>
-					<LinkList />
+					<CreateLink />
 				</main>
 			</ApolloProvider>
 		</div>
