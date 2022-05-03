@@ -1,1 +1,1 @@
-# react-apollo-tut
+#hackernews-react-apollo
