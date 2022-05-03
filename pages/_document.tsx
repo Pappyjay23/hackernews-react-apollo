@@ -1,23 +1,6 @@
 import { Html, Head, Main, NextScript } from "next/document";
-import {
-	ApolloProvider,
-	ApolloClient,
-	createHttpLink,
-	InMemoryCache,
-} from "@apollo/client";
-
 
 export default function Document() {
-	// Apollo imports
-	const httpLink = createHttpLink({
-		uri: "http://localhost:4000",
-	});
-
-	const client = new ApolloClient({
-		link: httpLink,
-		cache: new InMemoryCache(),
-	});
-
 	return (
 		<Html>
 			<Head>
@@ -27,9 +10,7 @@ export default function Document() {
 				/>
 			</Head>
 			<body>
-				<ApolloProvider client={client}>
-					<Main />
-				</ApolloProvider>
+				<Main />
 				<NextScript />
 			</body>
 		</Html>
