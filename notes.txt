@@ -1,0 +1,3 @@
+* Why are there two GraphQL API layers in a backend architecture with Prisma?
+Prisma provides the database layer which offers CRUD operations. The second layer is the application layer for business logic and common workflows (like authentication).
+
