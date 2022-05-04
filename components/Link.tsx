@@ -9,7 +9,7 @@ const Link = ({ description, url }: LinkProps) => {
 	return (
 		<div>
 			<div>
-				{description} ({url})
+				{description} - ({url})
 			</div>
 		</div>
 	);

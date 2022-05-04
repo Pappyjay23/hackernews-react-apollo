@@ -1,13 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import LinkList from "../components/LinkList";
 import {
 	ApolloProvider,
 	ApolloClient,
 	createHttpLink,
 	InMemoryCache,
 } from "@apollo/client";
-import Header from "../components/Header";
+import CreateLink from "../../components/CreateLink";
+import Header from "../../components/Header";
 
 const Home: NextPage = () => {
 	// Apollo imports
@@ -32,7 +32,7 @@ const Home: NextPage = () => {
 				<main className='center w85'>
 					<Header />
 					<div className="ph3 pv1 background-gray">
-						<LinkList />
+						<CreateLink />
 					</div>
 				</main>
 			</ApolloProvider>
